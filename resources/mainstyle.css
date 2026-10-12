@@ -1,0 +1,60 @@
+:root {
+    --psize: 16px;
+}
+body {
+    background: gray;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    margin: auto;
+    display: grid;
+    overflow: hidden;
+   
+}
+
+#container img {
+    width: 100%;
+    object-fit: contain;
+}
+
+#container p {
+    margin-top: 0px;
+    font-size: var(--psize);
+}
+
+.menu {
+position: fixed;
+background: rgba(255,255,255,0.4);
+padding: 2px;
+margin: 0px !important;
+width: 30px;
+height: 30px;
+}
+.menu img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0px 5px;
+  margin-top: -2px !important;
+  margin-left: -2px;
+}
+.menu-content li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 25px;
+    border-bottom: solid lightgrey 1px;
+
+}
+.menu:hover .menu-content {
+  display: block;
+}
